@@ -1,6 +1,7 @@
 /*1*/
-article section:first-of-type ul:first-of-type li {
-  color: black;
+section:first-of-type ul:first-of-type li {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*2*/
