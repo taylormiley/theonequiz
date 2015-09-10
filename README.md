@@ -37,6 +37,7 @@ A callback is a function that is called as an argument.
 
   **Student answer: **
 
+```
 function bacon() {
   alert("I LOVE BACON");
 }
@@ -44,6 +45,7 @@ function bacon() {
 $(document).ready(function(){
     $("button").click(bacon);
 });
+```
 
 ## Functions and operators
 
@@ -81,11 +83,13 @@ $(document).ready(function(){
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
+  ```
   Bacon().then(function(data) {
     console.log(data);
   }).fail(function(data) {
     console.log(data);
   }).done();
+  ```
 
 ## Scope and this
 
