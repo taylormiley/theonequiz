@@ -32,10 +32,11 @@ http-server
   Hoisting is the automatic act of declaring a variable at the beginning of load at the top of the javascript file.
 
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
-A callback is a function that is called as an argument.
+
 
 
   **Student answer: **
+  A callback is a function that is called as an argument.
 
 ```
 function bacon() {
