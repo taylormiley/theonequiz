@@ -29,9 +29,21 @@ http-server
 1. Explain what hoisting is. Provide your answer below.
 
   **Student answer: **
+  Hoisting is the automatic act of declaring a variable at the beginning of load at the top of the javascript file.
+
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
+A callback is a function that is called as an argument.
+
 
   **Student answer: **
+
+function bacon() {
+  alert("I LOVE BACON");
+}
+
+$(document).ready(function(){
+    $("button").click(bacon);
+});
 
 ## Functions and operators
 
@@ -61,18 +73,27 @@ http-server
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
   **Student answer:**
+  POST, GET, PUT, DELETE
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
+  Promises allow easier chaining to help prolong how long you have access to that data from the call.
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
+  Bacon().then(function(data) {
+    console.log(data);
+  }).fail(function(data) {
+    console.log(data);
+  }).done();
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
 **Student answer: **
+42 because 'this' refers to the scope in which the call site exists. In this case, it jumps all the way back up to steve(), which is in the global scope.
+
 
 ```
 var answer = "42";
